@@ -16,7 +16,7 @@ public class PingController {
   public static final ResponseEntity<String> KO =
       new ResponseEntity<>("KO", HttpStatus.INTERNAL_SERVER_ERROR);
 
- @GetMapping("/ping")
+  @GetMapping("/ping")
   public String ping() {
     return "pong";
   }
